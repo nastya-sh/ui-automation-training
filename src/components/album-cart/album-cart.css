@@ -1,0 +1,42 @@
+.photoList {
+  display: flex;
+  flex-flow: row wrap;
+  /* justify-content: space-between; */
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+  /* width: 15%; */
+}
+.photo-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 110px;
+  background: #efefef;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 5px 10px;
+}
+
+.photo-item__img {
+  width: 110px;
+  height: 100px;
+}
+.photo-item__title {
+  padding: 3px;
+}
+.photo-item__title i {
+  margin-right: 5px;
+}
+.title-page i {
+  margin: 0 10px;
+  cursor: pointer;
+}
+.title-page span {
+  margin-right: 10px;
+}

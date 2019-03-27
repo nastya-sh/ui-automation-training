@@ -1,0 +1,24 @@
+.photo-details {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+.photo-detail {
+  display: flex;
+  padding-bottom: 5px;
+}
+.photo-detail__title {
+  width: 14%;
+  font-weight: 500;
+}
+.photo-detail__value {
+  width: 86%;
+}
+.detail-image {
+  display: flex;
+  justify-content: center;
+}
+.detail-image__img {
+  width: 130px;
+  height: 90px;
+}

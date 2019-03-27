@@ -1,0 +1,29 @@
+.tab-list {
+  display: flex;
+  margin: 10px 0;
+  border-bottom: 1px solid #dedede;
+  color: #b1dfec;
+  height: 50px;
+  font-size: 14px;
+}
+.tab-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ebebea;
+  border-bottom: 1px solid #dedede;
+  border-radius: 5px 5px 0 0;
+  height: 50px;
+  width: 54px;
+
+  margin: 0 2.5px;
+}
+.tab-item:hover {
+  cursor: pointer;
+  color: #046dda;
+  border-bottom: 1px solid #fff;
+}
+.tab-item__active {
+  color: #046dda;
+  border-bottom: 1px solid #fff;
+}

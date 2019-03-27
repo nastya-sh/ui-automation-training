@@ -1,0 +1,19 @@
+.flex {
+  display: flex;
+  border-top: 1px solid #d9d7d7;
+  border-bottom: 1px solid #d9d7d7;
+  background: #f6f6f6;
+  padding: 10px;
+  color: #006ce0;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+.title-page {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #7d7d7d;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
