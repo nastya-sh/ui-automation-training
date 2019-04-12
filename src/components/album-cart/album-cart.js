@@ -22,7 +22,11 @@ const AlbumCart = ({
       <ul className="photoList">
         {photoList.map(photo => {
           return (
-            <li className="photo-item test" key={photo.id}>
+            <li
+              className="photo-item test"
+              key={photo.id}
+              data-e2e={`photo-${photo.id}`}
+            >
               <img
                 className="photo-item__img"
                 src={photo.source}

@@ -87,12 +87,13 @@ export default class AlbumstoreService {
   getAlbums() {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
-        if (Math.random() > 0.75) {
-          reject(new Error("Error !!!"));
-        } else {
-          resolve(this.data);
-        }
-      }, 1000);
+        resolve(this.data);
+        // if (Math.random() > 0.75) {
+        //   reject(new Error("Error !!!"));
+        // } else {
+        //   resolve(this.data);
+        // }
+      }, 10);
     });
   }
 }

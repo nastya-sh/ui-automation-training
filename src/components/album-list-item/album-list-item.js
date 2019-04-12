@@ -3,7 +3,7 @@ import React, { Fragment } from "react";
 import "./album-list-item.css";
 
 const AlbumListItem = ({ album, onOpenAlbum }) => {
-  const { source, title, createdTime, photoList } = album; //id,
+  const { source, title, createdTime, photoList, id } = album; //id,
   return (
     <Fragment>
       <div className="flex_item flex__img">
@@ -20,7 +20,7 @@ const AlbumListItem = ({ album, onOpenAlbum }) => {
           {createdTime}
         </span>
       </div>
-      <div className="flex_item flex__next">
+      <div className="flex_item flex__next" data-e2e={`open-album-${id}`}>
         {/* <Link to={`/albums/${id}`}> */}
         <i
           onClick={onOpenAlbum}

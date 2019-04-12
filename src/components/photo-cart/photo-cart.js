@@ -23,15 +23,21 @@ const PhotoCart = ({ currentPhoto, onClickPrev }) => {
       <ul className="photo-details">
         <li className="photo-detail">
           <div className="photo-detail__title">File name:</div>
-          <div className="photo-detail__value">{photo.source}</div>
+          <div className="photo-detail__value" data-e2e={"source"}>
+            {photo.source}
+          </div>
         </li>
         <li className="photo-detail">
           <div className="photo-detail__title">Object name:</div>
-          <div className="photo-detail__value">{photo.title}</div>
+          <div className="photo-detail__value" data-e2e={"title"}>
+            {photo.title}
+          </div>
         </li>
         <li className="photo-detail">
           <div className="photo-detail__title">Caption:</div>
-          <div className="photo-detail__value">{photo.desc}</div>
+          <div className="photo-detail__value" data-e2e={"desc"}>
+            {photo.desc}
+          </div>
         </li>
       </ul>
     </Fragment>

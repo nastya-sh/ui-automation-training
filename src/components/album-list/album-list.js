@@ -18,10 +18,10 @@ const AlbumList = ({ albums, onOpenAlbum, currentAlbum, currentPhoto }) => {
     return (
       <Fragment>
         <div className="title-page">Welcome, user_name</div>
-        <div>
+        <ul className="album-lists">
           {albums.map(album => {
             return (
-              <li key={album.id} className="flex">
+              <li key={album.id} className="flex" id={`album-${album.id}`}>
                 <AlbumListItem
                   album={album}
                   onOpenAlbum={() => onOpenAlbum(album.id)}
@@ -29,7 +29,7 @@ const AlbumList = ({ albums, onOpenAlbum, currentAlbum, currentPhoto }) => {
               </li>
             );
           })}
-        </div>
+        </ul>
       </Fragment>
     );
   } else if (currentPhoto.photo === undefined) {
